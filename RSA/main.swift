@@ -107,19 +107,17 @@ for i in 3..<numberF {
 }
 
 
-let myNumber = 228
+let myNumber = 234
+print("Число: \(myNumber)")
 let cr = toPow(num: myNumber, power: numberD) % numberM
 print("CR = \(cr)")
 let decr = toPow(num: cr, power: numberD) % numberM
 print("DEC = \(decr)")
 
 if (myNumber == decr) {
-    print("Succ")
+    print("Success!")
 }
 else {
     print("Fail")
 }
-
-
-
 
