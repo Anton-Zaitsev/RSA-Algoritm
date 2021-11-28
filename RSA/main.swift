@@ -28,27 +28,27 @@ private func coprime(_ a: Int, _ b: Int ) -> Bool {
 }
 
 public func NumberPrime() -> (mass: [Int], numberOne: Int, numberTwo: Int) {
-    let n = 10000
+    let n = 10000 //ввод границы
     var mass : [Int] = []
-    for i in 0 ... n {
+    for i in 0 ... n { //заполнение массива числами от 0 до n
         mass.append(i)
     }
-    mass[1] = 0
+    mass[1] = 0 //число 1 не является простым
     var i : Int = 2
     var j : Int = 0
     
-    while Int(pow(Double(i), 2)) <= n {
-        if (mass[i] != 0) {
-            j = i * 2
-            while j <= n {
-                mass[j] = 0
-                j += i
+    while Int(pow(Double(i), 2)) <= n { //проверка всех элементов массива от 2 до последнего
+        if (mass[i] != 0) { //если элемент массива не равен 0
+            j = i * 2 //следующее число, кратное i
+            while j <= n { //проверка всех элементов от j до n
+                mass[j] = 0 //обнуление элемента
+                j += i //следующее число, кратное i
             }
         }
-        i += 1
+        i += 1 //переход к следующему числу
     }
-    var mySet = Set<Int>(mass)
-    mySet.remove(0)
+    var mySet = Set<Int>(mass) //Удаление повторяющих элементов
+    mySet.remove(0) //Удаление нуля
     print(mySet)
     var index = Int.random(in: 0..<mySet.count - 1)
     var newMass = Array(mySet)
