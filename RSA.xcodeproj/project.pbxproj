@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		3A3700DE275425C800387894 /* RSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RSA; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3700E1275425C800387894 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3ADFC1A52754355C0073075C /* image0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image0.png; sourceTree = "<group>"; };
+		3ADFC1A62754355C0073075C /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		3A3700D5275425C800387894 = {
 			isa = PBXGroup;
 			children = (
+				3ADFC1A4275435520073075C /* Image */,
 				3A3700E0275425C800387894 /* RSA */,
 				3A3700DF275425C800387894 /* Products */,
 			);
@@ -60,6 +63,15 @@
 				3A3700E1275425C800387894 /* main.swift */,
 			);
 			path = RSA;
+			sourceTree = "<group>";
+		};
+		3ADFC1A4275435520073075C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				3ADFC1A52754355C0073075C /* image0.png */,
+				3ADFC1A62754355C0073075C /* image1.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
